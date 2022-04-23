@@ -1,0 +1,38 @@
+{
+  "id": "amazon#1625443200000",
+  "title": "Software Development Engineer Intern",
+  "company": {
+    "name": "Amazon",
+    "logo": "media/images/amz-logo.jpg"
+  },
+  "startDate": "2021-07-05T00:00:00.000Z",
+  "endDate": "2021-10-01T00:00:00.000Z",
+  "description": "Worked on the Kindle Team in Madrid, developing a metrics processor for the Kindle iOS and Android apps.",
+  "pictures": [
+    {
+      "description": "MAD12 (Amazon Madrid Headquarters) rooftop",
+      "image": "media/images/summer2021/rooftop2.jpg",
+      "thumbnail": "media/images/summer2021/thumbs/rooftop2.jpg"
+    },
+    {
+      "description": "My friend and fellow intern Sanja at the MAD12 rooftop",
+      "image": "media/images/summer2021/rooftop1.jpg",
+      "thumbnail": "media/images/summer2021/thumbs/rooftop1.jpg"
+    },
+    {
+      "description": "Palacio Real de Madrid",
+      "image": "media/images/summer2021/royal-palace.jpg",
+      "thumbnail": "media/images/summer2021/thumbs/royal-palace.jpg"
+    },
+    {
+      "description": "Pantano de San Juan (Pelayos de Presa)",
+      "image": "media/images/summer2021/pantano.jpg",
+      "thumbnail": "media/images/summer2021/thumbs/pantano.jpg"
+    },
+    {
+      "description": "Watching a football game at Wanda Metropolitano with friends and fellow interns",
+      "image": "media/images/summer2021/wanda.jpg",
+      "thumbnail": "media/images/summer2021/thumbs/wanda.jpg"
+    }
+  ]
+}

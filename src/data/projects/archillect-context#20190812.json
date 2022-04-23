@@ -1,0 +1,20 @@
+{
+  "id": "archillect-context#20190812",
+  "name": "Archillect Context",
+  "startDate": "2019-08-12T22:00:00.000Z",
+  "lastUpdateDate": "2022-03-29T00:00:00.000Z",
+  "image": "media/images/archillect-context.png",
+  "description": "Twitter bot that analyzes <a href=\"https://twitter.com/archillect\">@archillect</a> images and posts related keywords. More than 7400 followers and 1.2 million average monthly impressions on Twitter.",
+  "links": [
+    {
+      "name": "Twitter",
+      "path": "https://twitter.com/archicontext",
+      "fontAwesomeClass": "fa-brands fa-twitter"
+    },
+    {
+      "name": "GitHub",
+      "path": "https://github.com/lluiscamino/archillect-context",
+      "fontAwesomeClass": "fa-brands fa-github"
+    }
+  ]
+}
