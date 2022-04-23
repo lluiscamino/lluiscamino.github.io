@@ -9,7 +9,8 @@
     "add-project": "tsc && node dist/add-project.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --ext .ts .",
-    "prettier": "prettier --write \"**/*.{ts,tsx,css,js}\""
+    "prettier": "prettier --write \"**/*.{ts,tsx,css,js}\"",
+    "deploy": "git subtree push --prefix build origin gh-pages"
   },
   "repository": {
     "type": "git",
