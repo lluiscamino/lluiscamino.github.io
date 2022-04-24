@@ -27,18 +27,20 @@ class JobTemplate implements Template {
                 >
               </div>
               <div class="col-md-11">
-              <h4 class="card-title h5">${job.title}</h4>
-              <h5 class="card-subtitle h6">
-                ${job.company.name} | 
-                <small>${startDate} - ${endDate}</small>
-              </h5>
-              <p class="card-text">${job.description}</p>
-              ${job.pictures
-                .map(
-                  (picture) =>
-                    `<a href="${picture.image}" data-toggle="lightbox" data-gallery="${job.id}" data-caption="${picture.description}"><img src="${picture.thumbnail}" alt="${picture.description}" title="${picture.description}" width="171" height="128" class="img-thumbnail"></a>`,
-                )
-                .join('')}
+                <h4 class="card-title h5">${job.title}</h4>
+                <h5 class="card-subtitle h6">
+                  ${job.company.name} | 
+                  <small>${startDate} - ${endDate}</small>
+                </h5>
+                <p class="card-text">${job.description}</p>
+                <div class="job-pics">
+                ${job.pictures
+                  .map(
+                    (picture) =>
+                      `<a href="${picture.image}" data-toggle="lightbox" data-gallery="${job.id}" data-caption="${picture.description}"><img src="${picture.thumbnail}" alt="${picture.description}" title="${picture.description}" width="171" height="128" class="img-thumbnail"></a>`,
+                  )
+                  .join('')}
+                </div>
               </div>
           </div>
         </div>
