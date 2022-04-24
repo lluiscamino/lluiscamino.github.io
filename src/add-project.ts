@@ -1,7 +1,7 @@
-import readline from 'readline';
 import * as fs from 'fs';
 import path from 'path';
 import Project from './types/Project';
+import prompts from 'prompts';
 
 const projectsDir = path.join(__dirname, '..', 'src', 'data', 'projects');
 
@@ -13,29 +13,38 @@ const projectsDir = path.join(__dirname, '..', 'src', 'data', 'projects');
 })();
 
 async function buildProjectObject(): Promise<Project> {
-  const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-  });
-  const prompt = (query: string) =>
-    new Promise<string>((resolve) => rl.question(query + ': ', resolve));
-
-  const name = await prompt('Project name');
-  const startDateStr = await prompt('Start date (format: yyyy-mm-dd)');
-  const lastUpdateDateStr = await prompt(
-    'Last update date (format: yyyy-mm-dd)',
+  const responses = await prompts(
+    [
+      {
+        type: 'text',
+        name: 'projectName',
+        message: 'Project name',
+      },
+      {
+        type: 'date',
+        name: 'startDate',
+        message: 'Start date',
+        mask: 'YYYY-MM-DD',
+      },
+      {
+        type: 'date',
+        name: 'lastUpdateDate',
+        message: 'Last update date',
+        mask: 'YYYY-MM-DD',
+      },
+    ],
+    {
+      onCancel: () => process.exit(),
+    },
   );
-  const startDate = new Date(Date.parse(startDateStr));
-  const lastUpdateDate = new Date(Date.parse(lastUpdateDateStr));
-  rl.close();
   return {
     id:
-      name.replace(' ', '-').toLowerCase() +
+      responses.projectName.replace(' ', '-').toLowerCase() +
       '#' +
-      startDate.toISOString().slice(0, 10).replace(/-/g, ''),
-    name: name,
-    startDate: startDate,
-    lastUpdateDate: lastUpdateDate,
+      responses.startDate.toISOString().slice(0, 10).replace(/-/g, ''),
+    name: responses.projectName,
+    startDate: responses.startDate,
+    lastUpdateDate: responses.lastUpdateDate,
     image: '',
     description: '',
     links: [],

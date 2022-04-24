@@ -1,7 +1,7 @@
-import readline from 'readline';
 import * as fs from 'fs';
 import Job from './types/Job';
 import path from 'path';
+import prompts from 'prompts';
 
 const jobsDir = path.join(__dirname, '..', 'src', 'data', 'jobs');
 
@@ -13,31 +13,52 @@ const jobsDir = path.join(__dirname, '..', 'src', 'data', 'jobs');
 })();
 
 async function buildJobObject(): Promise<Job> {
-  const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-  });
-  const prompt = (query: string) =>
-    new Promise<string>((resolve) => rl.question(query + ': ', resolve));
+  const responses = await prompts(
+    [
+      {
+        type: 'text',
+        name: 'jobTitle',
+        message: 'Job title',
+      },
+      {
+        type: 'text',
+        name: 'companyName',
+        message: 'Company',
+      },
+      {
+        type: 'date',
+        name: 'startDate',
+        message: 'Start date',
+        mask: 'YYYY-MM-DD',
+      },
+      {
+        type: 'confirm',
+        name: 'currentlyOnJob',
+        message: 'Current job',
+      },
+      {
+        type: (prev) => (prev ? null : 'date'),
+        name: 'endDate',
+        message: 'End date',
+        mask: 'YYYY-MM-DD',
+      },
+    ],
+    {
+      onCancel: () => process.exit(),
+    },
+  );
 
-  const jobTitle = await prompt('Job title');
-  const companyName = await prompt('Company');
-  const startDateStr = await prompt('Start date (format: yyyy-mm-dd)');
-  const endDateStr = await prompt('End date (format: yyyy-mm-dd or empty)');
-  const startDate = new Date(Date.parse(startDateStr));
-  const endDate = endDateStr ? new Date(Date.parse(endDateStr)) : undefined;
-  rl.close();
   return {
     id:
-      companyName.replace(' ', '-').toLowerCase() +
+      responses.companyName.replace(' ', '-').toLowerCase() +
       '#' +
-      startDate.toISOString().slice(0, 10).replace(/-/g, ''),
-    title: jobTitle,
+      responses.startDate.toISOString().slice(0, 10).replace(/-/g, ''),
+    title: responses.jobTitle,
     company: {
-      name: companyName,
+      name: responses.companyName,
     },
-    startDate: startDate,
-    endDate: endDate,
+    startDate: responses.startDate,
+    endDate: responses.endDate,
     description: '',
     pictures: [],
   };
