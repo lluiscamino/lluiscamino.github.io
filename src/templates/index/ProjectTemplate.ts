@@ -28,6 +28,14 @@ class ProjectTemplate implements Template {
               </div>
               <h4 class="card-title h5">${project.name}</h4>
               <p class="card-text">${project.description}</p>
+              <div class="card-pics">
+                ${project.pictures
+                  .map(
+                    (picture) =>
+                      `<a href="${picture.image}" data-toggle="lightbox" data-gallery="${project.id}" data-caption="${picture.description}"><img src="${picture.thumbnail}" alt="${picture.description}" title="${picture.description}" width="171" height="128" class="img-thumbnail"></a>`,
+                  )
+                  .join('')}
+                </div>
               </div>
           </div>
         </div>

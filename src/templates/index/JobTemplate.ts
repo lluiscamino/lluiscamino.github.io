@@ -33,7 +33,7 @@ class JobTemplate implements Template {
                   <small>${startDate} - ${endDate}</small>
                 </h5>
                 <p class="card-text">${job.description}</p>
-                <div class="job-pics">
+                <div class="card-pics">
                 ${job.pictures
                   .map(
                     (picture) =>

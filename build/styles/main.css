@@ -161,7 +161,7 @@ footer .container {
   border-bottom: 0 solid;
 }
 
-.job-pics {
+.card-pics {
   max-width: 100%;
   overflow-x: auto;
   white-space: nowrap;
