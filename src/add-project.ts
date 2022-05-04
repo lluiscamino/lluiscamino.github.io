@@ -48,6 +48,7 @@ async function buildProjectObject(): Promise<Project> {
     image: '',
     description: '',
     links: [],
+    pictures: [],
   };
 }
 

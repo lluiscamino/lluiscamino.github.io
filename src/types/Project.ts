@@ -1,3 +1,5 @@
+import Picture from './Picture';
+
 type Project = {
   id: string;
   name: string;
@@ -6,6 +8,7 @@ type Project = {
   image: string;
   description: string;
   links: {name: string; path: string; fontAwesomeClass: string}[];
+  pictures: Picture[];
 };
 
 export default Project;

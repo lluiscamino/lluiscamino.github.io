@@ -1,3 +1,5 @@
+import Picture from './Picture';
+
 type Job = {
   id: string;
   title: string;
@@ -8,11 +10,7 @@ type Job = {
   startDate: Date;
   endDate: Date | undefined;
   description: string;
-  pictures: {
-    description: string;
-    image: string;
-    thumbnail: string;
-  }[];
+  pictures: Picture[];
 };
 
 export default Job;
