@@ -1,0 +1,37 @@
+{
+  "id": "gitjobs#20220430",
+  "name": "GitJobs",
+  "startDate": "2022-04-30T19:02:17.128Z",
+  "lastUpdateDate": "2022-05-01T19:03:28.771Z",
+  "image": "media/images/project-logos/gitjobs.png",
+  "description": "Job finding portal that presents personalized IT job postings based on the user's GitHub account data. Earned the <strong>3rd prize</strong> in the InfoJobs challenge of <a href=\"https://hackupc-2022.devpost.com/\">HackUPC 2022</a>.",
+  "links": [
+    {
+      "name": "GitHub",
+      "path": "https://github.com/lluiscamino/gitjobs",
+      "fontAwesomeClass": "fa-brands fa-github"
+    },
+    {
+      "name": "DevPost",
+      "path": "https://devpost.com/software/gitjobs",
+      "fontAwesomeClass": "fa-solid fa-d"
+    }
+  ],
+  "pictures": [
+    {
+      "description": "Me and my team receiving the InfoJobs challenge 3rd prize award",
+      "image": "media/images/hackupc2022/stage.jpg",
+      "thumbnail": "media/images/hackupc2022/thumbs/stage.jpg"
+    },
+    {
+      "description": "Selfie with the award",
+      "image": "media/images/hackupc2022/selfie.jpg",
+      "thumbnail": "media/images/hackupc2022/thumbs/selfie.jpg"
+    },
+    {
+      "description": "Close picture of the InfoJobs 3rd prize award",
+      "image": "media/images/hackupc2022/award.jpg",
+      "thumbnail": "media/images/hackupc2022/thumbs/award.jpg"
+    }
+  ]
+}
