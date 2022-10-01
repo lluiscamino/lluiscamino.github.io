@@ -2,7 +2,7 @@
   "baseUrl": "https://lluiscamino.me",
   "shortName": "Lluís Camino",
   "longName": "Lluís Camino Pérez",
-  "shortBio": "Software Engineer & C.S student",
+  "shortBio": "Software Engineer",
   "longBio": "<p>I'm a final year Computer Engineering student at the University of the Balearic Islands. My job experience includes doing a Software Development Engineer internship at Amazon and working as a collaborating student developing the website of my university's economics faculty.</p><p>My topics of interest include backend development, cloud computing, databases, compilers, and machine learning, although I'm always looking to expand my knowledge in new fields. Some of the programming languages that I have more experience with are Java, TypeScript, Python and Go.</p>",
   "pageNameSeparator": " | ",
   "menuLinks": [
