@@ -9,9 +9,9 @@ class JobTemplate implements Template {
       month: 'short',
       year: 'numeric',
     };
-    const startDate = job.startDate.toLocaleDateString('default', dateOptions);
+    const startDate = job.startDate.toLocaleDateString('en-US', dateOptions);
     const endDate = job.endDate
-      ? job.endDate.toLocaleDateString('default', dateOptions)
+      ? job.endDate.toLocaleDateString('en-US', dateOptions)
       : 'present';
     return `
     <div class="card mb-3 card-item">
