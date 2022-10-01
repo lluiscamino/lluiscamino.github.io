@@ -1,0 +1,38 @@
+{
+  "id": "twilio#20220606",
+  "title": "Software Engineer Intern",
+  "company": {
+    "name": "Twilio",
+    "logo": "media/images/twilio-logo.jpg"
+  },
+  "startDate": "2022-06-06T20:15:00.297Z",
+  "endDate": "2022-08-27T20:15:54.774Z",
+  "description": "Worked on improving the reliability and observability of Twilio's Edge, one of its main services, receiving more than 15B weekly requests. Being a remote internship, I worked from Mallorca, Munich, Croatia and even took a short holiday to Milan!",
+  "pictures": [
+    {
+      "description": "Marienplatz, the main square in Munich",
+      "image": "media/images/summer2022/marienplatz.jpg",
+      "thumbnail": "media/images/summer2022/thumbs/marienplatz.jpg"
+    },
+    {
+      "description": "Allianz Arena, FC Bayern München stadium",
+      "image": "media/images/summer2022/allianz-arena.jpg",
+      "thumbnail": "media/images/summer2022/thumbs/allianz-arena.jpg"
+    },
+    {
+      "description": "Beautiful Adriatic sea in Opatija, Croatia",
+      "image": "media/images/summer2022/opatija.jpg",
+      "thumbnail": "media/images/summer2022/thumbs/opatija.jpg"
+    },
+    {
+      "description": "Duomo di Milano",
+      "image": "media/images/summer2022/duomo.jpg",
+      "thumbnail": "media/images/summer2022/thumbs/duomo.jpg"
+    },
+    {
+      "description": "Monza, one of Formula 1 most famous tracks",
+      "image": "media/images/summer2022/monza.jpg",
+      "thumbnail": "media/images/summer2022/thumbs/monza.jpg"
+    }
+  ]
+}
