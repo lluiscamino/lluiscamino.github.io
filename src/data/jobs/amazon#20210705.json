@@ -3,11 +3,11 @@
   "title": "Software Development Engineer Intern",
   "company": {
     "name": "Amazon",
-    "logo": "media/images/amz-logo.jpg"
+    "logo": "media/images/amz-logo.png"
   },
   "startDate": "2021-07-05T00:00:00.000Z",
   "endDate": "2021-10-01T00:00:00.000Z",
-  "description": "Worked on the Kindle Team in Madrid, developing a metrics processor for the Kindle iOS and Android apps.",
+  "description": "Worked in the Kindle Team in Madrid, developing a metrics processor for the Kindle iOS and Android apps.",
   "pictures": [
     {
       "description": "MAD12 (Amazon Madrid Headquarters) rooftop",
